@@ -218,7 +218,7 @@ export default function Page() {
         )}
       </Section>
 
-      <Section title="Top Repositories">
+      <Section title="Latest Repositories">
         {!loading && !error && (
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {topRepos.map((r) => (
@@ -307,7 +307,19 @@ function RepoCard({ repo }: { repo: any }) {
             <ExternalLink className="h-4 w-4" />
           </a>
         </div>
-        <p className="mt-2 line-clamp-3 text-sm text-white/70">{repo.description || 'No description provided.'}</p>
+        <p className="mt-2 line-clamp-3 text-sm text-white/70">{repo.description || 'Description not needed'}</p>
+        {repo.homepage && (
+          <div className="mt-4">
+            <a
+              href={repo.homepage.startsWith('http') ? repo.homepage : `https://${repo.homepage}`}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-lg border border-white/20 px-3 py-1.5 text-sm font-medium text-white/90 hover:bg-white/10"
+            >
+              🌐 Live Demo
+            </a>
+          </div>
+        )}
       </div>
       <div className="mt-5 flex flex-wrap items-center gap-3 text-xs text-white/70">
         <span className="inline-flex items-center gap-1"><Star className="h-3 w-3" /> {repo.stargazers_count}</span>
