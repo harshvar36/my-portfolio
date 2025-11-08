@@ -204,7 +204,7 @@ export default function Page() {
             {featuredRepos.length === 0 && (
               <Card>
                 <div>
-                  <h3 className="text-lg font-semibold">Add your featured repos</h3>
+                  <h3 className="text-lg font-semibold">My featured projects</h3>
                   <p className="mt-2 text-sm text-white/70">
                     Update the <code>FEATURED</code> array in the page code with your best repo names to pin them here.
                   </p>
