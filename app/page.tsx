@@ -9,9 +9,9 @@ import { Github, Linkedin, Mail, ExternalLink, Star, GitFork, Rocket } from 'luc
 const NAME = 'Harshvardhan Singh';
 const TAGLINE = 'Engineer. Analyst. Integrator  • Bridging Tech and Operations  • Solving. Analyzing. Building';
 const GITHUB_USERNAME = 'harshvar36';
-const LINKEDIN_URL = 'https://www.linkedin.com/in/harshvardhan-singh-508a18319/'; // add your handle
+const LINKEDIN_URL = 'https://www.linkedin.com/in/harshvardhan-singh-508a18319/'; 
 const EMAIL = 'harshva36@gmail.com'; // e.g., 'you@example.com'
-const RESUME_URL = 'https://drive.google.com/file/d/1LnTMMF7oAcGmyoKzEqvUbTy4Qs9jgUn6/view?usp=drive_link '; // link a hosted PDF when ready
+const RESUME_URL = 'https://drive.google.com/file/d/1LnTMMF7oAcGmyoKzEqvUbTy4Qs9jgUn6/view?usp=drive_link '; 
 
 // Featured repo names to pin to the top grid (must match GitHub repo names exactly)
 const FEATURED: string[] = [
