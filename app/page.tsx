@@ -16,6 +16,8 @@ const RESUME_URL = 'https://drive.google.com/file/d/1LnTMMF7oAcGmyoKzEqvUbTy4Qs9
 // Featured repo names to pin to the top grid (must match GitHub repo names exactly)
 const FEATURED: string[] = [
   'streamlit-iris-app-aiml',
+  'energy-forecasting',
+  'automated-CI-CD-Pipeline',
   // 'disaster-tweets-early-warning',
   // 'humm-voice-journaling',
 ];
